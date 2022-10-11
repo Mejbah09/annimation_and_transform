@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: 0px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* common css end  */
+
+iframe{
+    width: 100%;
+    height: 700px;
+}
+.map{
+    position: relative; 
+      
+}
+.style_form{
+    background-color: brown;
+    color: black;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .10s;
+    opacity: -1;
+    
+    
+}
+.style_form:hover{
+    visibility: visible;
+    opacity: 1;
+}
+.style_form h1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 21px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.style_form  input,
+.style_form textarea{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: blueviolet;
+    border: none;
+    padding: 15px;
+    margin: 30px;
+    transform: translateX(85px);
+    
+}
+.style_form textarea{
+    resize: none;
+    transform: translateX(80px);
+
+}
+.submit{
+    background: yellow;
+    padding: 8px 20px;
+    color: blue;
+    font-size: medium;
+    font-weight: 800;
+    border: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: .8s;
+}
+.submit:hover{
+    background: black;
+    color: brown;
+    border-radius: 30px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic_circle{
+    display:inline-block;
+    width: 330px;
+    height:330px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 20px;
+}
+    
+
+.preloder{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-top:5px dotted red ;
+    border-left: 30x solid green;
+    border-bottom: 5px groove purple;
+    border-right:5px ridge blue ;
+    border-radius: 50%;
+    animation-name: preloder;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.preloder img{
+    display: block;
+    margin: auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@keyframes preloder {
+    0%{ 
+        /* background: blue; */
+        transform: rotate(0deg);
+    }
+    20%{ 
+        /* background-color: purple; */
+        transform: rotate(80deg);
+    }
+    40%{ 
+        /* background-color: green; */
+        transform: rotate(160deg);
+    }
+    60%{
+        background-color: tomato;
+        transform: rotate(230deg);
+    }
+    80%{ 
+        background-color: aqua;
+        transform: rotate(300deg);
+    }
+    100%{ 
+        /* background-color: black; */
+        transform: rotate(360deg);
+    }
+}
+
+
+.animation_line{
+    margin: 100px auto;
+    width: 700px;
+    background-color: black;
+}
+
+.animation_line span{
+    display:inline-block;
+    background: red;
+    width: 5px;
+    height: 250px;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 25px;
+    animation-name: line_preloder;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+   
+}
+.animation_line span:nth-child(1){
+    animation-duration: 0.5s;
+    background: purple;
+}
+.animation_line span:nth-child(2){
+    animation-duration: 0.3s;
+    background: yellow;
+}
+.animation_line span:nth-child(3){
+    animation-duration: 0.7s;
+    background: green;
+}
+.animation_line span:nth-child(4){
+    animation-duration: 1s;
+}
+.animation_line span:nth-child(5){
+    animation-duration: 0.4s;
+    background: blue;
+}
+.animation_line span:nth-child(6){
+    animation-duration: 0.8s;
+    background: orange;
+}
+.animation_line span:nth-child(7){
+    animation-duration: 0.5s;
+    background: olive;
+}
+.animation_line span:nth-child(8){
+    animation-duration: 0.6s;
+    background-color: rgb(10, 54, 138);
+}
+.animation_line span:nth-child(9){
+    animation-duration: 0.7.5s;
+    background: rgb(114, 25, 124);
+}
+.animation_line span:nth-child(10){
+    animation-duration: 0.9s;
+    background: rgb(243, 76, 26);
+}
+
+@keyframes line_preloder {
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0); 
+    }
+}
+
+/* the end  */
